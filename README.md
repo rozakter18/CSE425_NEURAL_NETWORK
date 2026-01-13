@@ -29,37 +29,37 @@ This project implements unsupervised learning for music clustering using Variati
 
 Results will be saved to the `results/` directory.
 
-## Project Structure
+# Project Structure
 
 PROJECT/
 ├── data/
-│ ├── audio/ # Raw audio files
-│ └── lyrics/ # Raw lyrics data
+│   ├── audio/                  # Raw audio files
+│   └── lyrics/                 # Raw lyrics data
 │
-├── embeddings_labse_v2/ # Precomputed LaBSE embeddings
+├── embeddings_labse_v2/        # Precomputed LaBSE embeddings
 │
 ├── notebooks/
-│ ├── audio_exploratory.ipynb
-│ └── lyrics_genre_exploratory.ipynb
+│   ├── audio_exploratory.ipynb
+│   └── lyrics_genre_exploratory.ipynb
 │
-├── processed/ # Cleaned & feature-engineered data
+├── processed/                  # Cleaned & feature-engineered data
 │
 ├── results/
-│ ├── easy/ # Easy task outputs
-│ ├── medium/ # Medium task outputs
-│ └── results_hard/ # Hard task outputs (Beta-VAE / CVAE)
+│   ├── easy/                   # Easy task outputs
+│   ├── medium/                 # Medium task outputs
+│   └── results_hard/           # Hard task outputs (Beta-VAE / CVAE)
 │
 ├── src/
-│ ├── init.py
-│ ├── easy_vae.py # Basic VAE (Easy task)
-│ ├── easy_clustering.py # KMeans / Hierarchical clustering
-│ ├── easy_evaluation.py # Silhouette, NMI (easy)
-│ ├── medium_vae.py # Enhanced VAE (audio + lyrics)
-│ ├── medium_clustering.py # Multimodal clustering
-│ ├── medium_evaluation.py # Evaluation (medium)
-│ └── hard_task.py # Beta-VAE / CVAE multimodal pipeline
+│   ├── __init__.py
+│   ├── easy_vae.py             # Basic VAE (Easy task)
+│   ├── easy_clustering.py      # KMeans / Hierarchical clustering
+│   ├── easy_evaluation.py      # Silhouette, NMI (easy)
+│   ├── medium_vae.py           # Enhanced VAE (audio + lyrics)
+│   ├── medium_clustering.py    # Multimodal clustering
+│   ├── medium_evaluation.py    # Evaluation (medium)
+│   └── hard_task.py            # Beta-VAE / CVAE multimodal pipeline
 │
-├── venv/ # Virtual environment
+├── venv/                        # Virtual environment
 ├── requirements.txt
 ├── .gitignore
 └── README.md
