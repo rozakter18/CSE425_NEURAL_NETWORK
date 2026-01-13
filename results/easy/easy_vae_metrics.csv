@@ -1,0 +1,2 @@
+method,best_k,silhouette,calinski_harabasz
+VAE,3,0.4762962,5401.7295

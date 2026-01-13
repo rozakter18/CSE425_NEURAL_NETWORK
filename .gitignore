@@ -1,0 +1,12 @@
+venv/
+env/
+pycache/
+*.pyc
+data/audio/
+data/lyrics/
+embeddings_labse_v2/
+processed/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,2 @@
+method,best_k,silhouette,calinski_harabasz
+PCA,3,0.1930533621135468,732.4935347274918
