@@ -12,7 +12,7 @@ This project implements unsupervised learning for music clustering using Variati
 2. Install dependencies: `pip install -r requirements.txt`
 3. Ensure data is placed in the correct directories as per the structure below.
 
-## Usage
+## Tasks
 
 ### Easy Task
 1. Run VAE training: `python src/easy_vae.py`
@@ -28,46 +28,6 @@ This project implements unsupervised learning for music clustering using Variati
 1. Run complete multimodal analysis: `python src/hard_task.py`
 
 Results will be saved to the `results/` directory.
-
-## Project Structure
-
-PROJECT/
-│
-├── data/
-│   ├── audio/                     # Raw audio files
-│   ├── lyrics/                    # Raw lyrics data 
-│   
-└──  embeddings_labse_v2/          # Precomputed LaBSE embeddings
-│
-├── notebooks/
-│   ├── audio_exploratory.ipynb
-│   └── lyrics_genre_exploratory.ipynb
-│
-├── processed/                     # Cleaned & feature-engineered data
-│
-├── results/
-│   ├── easy/                      # Easy task outputs
-│   ├── medium/                    # Medium task outputs
-│   └── results_hard/              # Hard task outputs (Beta-VAE / CVAE)
-│
-├── src/
-│   ├── init.py
-│   │
-│   ├── easy_vae.py                # Basic VAE (Easy task)
-│   ├── easy_clustering.py         # KMeans / Hierarchical clustering
-│   ├── easy_evaluation.py         # Silhouette, NMI (easy)
-│   │
-│   ├── medium_vae.py              # Enhanced VAE (audio + lyrics)
-│   ├── medium_clustering.py       # Multimodal clustering
-│   ├── medium_evaluation.py       # Evaluation (medium)
-│   │
-│   └── hard_task.py               # Beta-VAE / CVAE multimodal pipeline
-│
-├── venv/                          # Virtual environment
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
 
 **Dataset Link:**  
 https://drive.google.com/drive/folders/1368ujLo65p4Y1ZvBVZ45q550MeemtySp?usp=drive_link
