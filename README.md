@@ -29,38 +29,5 @@ This project implements unsupervised learning for music clustering using Variati
 
 Results will be saved to the `results/` directory.
 
-PROJECT/
-├── data/
-│   ├── audio/                  # Raw audio files
-│   └── lyrics/                 # Raw lyrics data
-│       ├── embeddings_labse_v2/ # Precomputed LaBSE embeddings
-│       └── lyrics_gen_exploratory.ipynb
-├── notebooks/                  
-│   ├── audio_exploratory.ipynb
-│   └── lyrics_gen_exploratory.ipynb
-├── processed/
-│   ├── results/
-│   │   ├── easy/               # Easy task outputs
-│   │   ├── medium/             # Medium task outputs
-│   │   └── hard/               # Hard task outputs (Beta-VAE and CVAE)
-│   └── results_hard/
-├── src/
-│   ├── __init__.py
-│   ├── easy_clustering.py      # KMeans / Hierarchical clustering
-│   ├── easy_evaluation.py      # Silhouette, NMI (easy)
-│   ├── medium_clustering.py    # Multimodal clustering
-│   └── medium_evaluation.py    # Evaluation (medium)
-├── hard_task.py               # Beta-VAE / CVAE multimodal pipeline
-├── requirements.txt           # Project dependencies
-├── .gitignore                 # Git ignore file
-└── README.md                  # Project documentation
-
-
-
-
-
-
-
-
 **Dataset Link:**  
 https://drive.google.com/drive/folders/1368ujLo65p4Y1ZvBVZ45q550MeemtySp?usp=drive_link
